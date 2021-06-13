@@ -1,0 +1,15 @@
+function con1 (name,age){
+    this.name = name;
+    this.age = age;
+}
+
+
+var a = prompt("enter name");
+var b = prompt("enter age");
+con1.prototype.getName = function()
+{
+   return("the name of p1 object is" + this.name);
+}
+var p1 = new con1(a,b);
+var c= p1.getName();
+alert(c);
