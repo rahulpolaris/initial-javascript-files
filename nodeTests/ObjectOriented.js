@@ -63,7 +63,7 @@ console.log("____________________________________________________________")
          this.type=type
          this.pay=pay
          this.showDetails = ()=>{
-             return {title,type,pay}
+             return {title:this.title,type,pay}
          }
      }
      getDetails(){
@@ -93,5 +93,8 @@ console.log("____________________________________________________________")
  }
  const rahul = new Dev("webDev","web Aplications","1 billion","full Stack","infinite")
  console.log(rahul.getDetails())
+ console.log("#######################")
+ console.log(rahul.showDetails())
+ console.log("#######################2")
  console.log(rahul.workRec())
  console.log(rahul)
