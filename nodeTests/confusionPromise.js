@@ -2,10 +2,11 @@
 
 
 const newPromise = () =>{
+    console.log("inside a new promise")
     return new Promise((resolve,reject)=>{
         if(3>2)
         {
-            resolve('yes 3 is greater than 2')
+            resolve('payload data')
         }
         else
         {
@@ -15,15 +16,15 @@ const newPromise = () =>{
 }
 
 // console.log(newPromise().then((a)=>{return a}))
-async function init()
+async function init1()
 {
-    const a=await newPromise()
-    // console.log("inside async")
-    // console.log(a)
+    const data=await newPromise()
+    console.log("inside async init1")
+    console.log(data)
 }
 async function init2()
-{
-    const b = await init()
-    console.log(b)}
+{   console.log("inside async init 2")
+    await init1()
+    console.log("is this undefined")}
 // console.log(p)
 init2()

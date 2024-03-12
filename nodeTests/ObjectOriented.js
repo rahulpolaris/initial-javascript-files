@@ -6,7 +6,7 @@ function product(name,price,functionality,callback){
       return {name,price,functionality}
     }
   }
-  const SexDoll = new product("Tina","rs20000","pleases sexually")
+  const SexDoll = new product("TinaT2024","rs20000","pleases sexually")
   console.log(SexDoll.name)
   console.log(SexDoll.returnDetails())  
   console.log(Object.values(SexDoll))
